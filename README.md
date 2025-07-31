@@ -38,29 +38,24 @@ This will start the application in development mode with Turbopack for faster pe
 
 ## Deployment to GitHub Pages
 
-This project is configured for static export, making it easy to deploy on GitHub Pages.
+This project is configured for easy deployment to GitHub Pages using a `gh-pages` branch.
 
-### Step 1: Build the Static Site
+### Step 1: Deploy to the `gh-pages` Branch
 
-Run the build script. This will generate a static version of your site in the `out` directory.
+Run the deploy script. This command will first build your static site (creating the `out` directory) and then automatically push the contents of the `out` directory to a special `gh-pages` branch in your repository.
 
 ```bash
-npm run build
+npm run deploy
 ```
-
-### Step 2: Push to GitHub
-
-Commit and push the entire project, including the newly created `out` directory, to your GitHub repository.
-
-### Step 3: Configure GitHub Pages
+### Step 2: Configure GitHub Pages
 
 1.  In your GitHub repository, go to **Settings** > **Pages**.
 2.  Under the "Build and deployment" section, set the **Source** to **Deploy from a branch**.
-3.  Under "Branch", select the branch you pushed your code to (e.g., `main`).
-4.  Change the folder from **/(root)** to **/out**.
-5.  Click **Save**.
+3.  Under "Branch", select `gh-pages` as the source branch and `/ (root)` as the folder.
+4.  Click **Save**.
 
-GitHub will now build and deploy your site from the `/out` directory. It might take a few minutes for the site to become live. You can track the progress in the "Actions" tab of your repository.
+
+GitHub will now serve your site from the `gh-pages` branch. It might take a few minutes for the site to become live. You can track the progress in the "Actions" tab of your repository.
 
 ### Hosting on `your-username.github.io`
 

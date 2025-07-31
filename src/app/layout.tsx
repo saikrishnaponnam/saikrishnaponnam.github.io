@@ -20,6 +20,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
         <div className="flex flex-col min-h-screen">

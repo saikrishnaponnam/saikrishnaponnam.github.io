@@ -53,9 +53,7 @@ export function Header() {
     <header className="bg-card/80 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm">
-            SK
-          </div>
+          <img src="/logo.png" alt="Logo" className="w-12 h-10 object-cover" />
           Sai Krishna Ponnam
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
